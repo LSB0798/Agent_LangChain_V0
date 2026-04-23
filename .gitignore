@@ -1,0 +1,32 @@
+# Milvus 数据（巨大）
+volumes/
+
+# 大型数据集
+documents1/
+ShareGPT-Chinese-English-90k_/
+transformed1.txt
+translated1.txt
+
+# 第三方源码包
+transformers-main/
+transformers.zip
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 日志文件
+*.log
+rag_interaction_*.log
+
+# IDE
+.vscode/
+.idea/
+
+# 其他大文件
+*.sst
+*.bin
+*.safetensors
+*.zip
+*.tar
+*.gz

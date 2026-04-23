@@ -1,0 +1,8 @@
+milvus==2.3.5
+langchain==0.1.14
+langchain-community==0.0.38
+langchain-core==0.1.53
+langchain-text-splitters==0.0.2
+langgraph==1.0.1
+langgraph-sdk==0.2.9
+langsmith==0.1.147
