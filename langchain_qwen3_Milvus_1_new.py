@@ -19,9 +19,9 @@ class Config:
     CHUNK_OVERLAP = 50           # 块间重叠字符数（避免分割丢失上下文）
     
     # 模型相关配置
-    EMBEDDING_MODEL_NAME = "/data/lishuaibing/BAAI/bge-m3/"  # 中文嵌入模型
-    # LLM_MODEL_NAME = "/data/lishuaibing/Qwen2___5-7B-Instruct"  # LLM模型
-    LLM_MODEL_NAME = "/data/lishuaibing/Qwen3-30B-A3B/"  # LLM模型
+    EMBEDDING_MODEL_NAME = "/data/BAAI/bge-m3/"  # 中文嵌入模型
+    # LLM_MODEL_NAME = "/data/Qwen2___5-7B-Instruct"  # LLM模型
+    LLM_MODEL_NAME = "/data/Qwen3-30B-A3B/"  # LLM模型
 
     # 检索相关配置
     # Milvus Lite 配置
