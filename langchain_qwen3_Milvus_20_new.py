@@ -40,7 +40,7 @@ class Logger:
 class Config:
     """系统配置"""
     # API 配置（与原始代码保持一致）
-    OPENAI_BASE_URL = "http://10.20.223.89:61253/v1"
+    OPENAI_BASE_URL = "http://...:/v1"
     OPENAI_API_KEY = "EMPTY"
     MODEL_NAME = "qwen3-moe"          # 问答和风险评判共用模型
 
@@ -314,7 +314,7 @@ def main():
     qa_system = SimpleQASystem(config)
 
     print("\n=== 精简版问答系统（加载敏感词）===")
-    xlsx_file_path = "/data/lishuaibing/langchain/key_words_0327.xlsx"
+    xlsx_file_path = "/data/langchain/key_words_0327.xlsx"
     collected_key_words = get_key_words(xlsx_file_path)
     print('type : {}, length : {}'.format(type(collected_key_words), len(collected_key_words)))
 
