@@ -30,9 +30,9 @@ class Config:
     CHUNK_OVERLAP = 50           # 块间重叠字符数（避免分割丢失上下文）
     
     # 模型相关配置
-    EMBEDDING_MODEL_NAME = "/data/lishuaibing/Qwens/Qwen3-Embedding-0.6B"  # 使用Qwen3嵌入模型
-    RERANKER_MODEL_NAME = "/data/lishuaibing/Qwens/Qwen3-Reranker-0.6B"    # Reranker模型
-    LLM_MODEL_NAME = "/data/lishuaibing/Qwen3-30B-A3B"  # LLM模型
+    EMBEDDING_MODEL_NAME = "/data/Qwens/Qwen3-Embedding-0.6B"  # 使用Qwen3嵌入模型
+    RERANKER_MODEL_NAME = "/data/Qwens/Qwen3-Reranker-0.6B"    # Reranker模型
+    LLM_MODEL_NAME = "/data/Qwen3-30B-A3B"  # LLM模型
 
     # 检索相关配置
     COLLECTION_NAME = "rag_collection"  # 集合名称
