@@ -57,7 +57,7 @@ class Logger:
 class Config:
     """系统配置"""
     # API 配置（与原始代码保持一致）
-    OPENAI_BASE_URL = "http://10.20.223.89:61253/v1"
+    OPENAI_BASE_URL = "http://...:/v1"
     OPENAI_API_KEY = "EMPTY"
     MODEL_NAME = "qwen3-moe"          # 问答和风险评判共用模型
 
@@ -347,7 +347,7 @@ if FASTAPI_AVAILABLE:
         if _api_qa is None:
             config = Config()
             _api_qa = SimpleQASystem(config)
-            _api_keywords = get_key_words("/data/lishuaibing/langchain/key_words_0327.xlsx")
+            _api_keywords = get_key_words("/data/langchain/key_words_0327.xlsx")
             print("API 组件初始化完成")
         return _api_qa, _api_keywords
 
