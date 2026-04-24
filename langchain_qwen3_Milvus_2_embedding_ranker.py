@@ -20,11 +20,11 @@ import torch
 from transformers import AutoModel, AutoTokenizer, AutoModelForCausalLM
 print('-0-' * 10)
 # Load Qwen3-Embedding-0.6B model for text embeddings
-embedding_model = SentenceTransformer("/data/lishuaibing/Qwens/Qwen3-Embedding-0.6B")
+embedding_model = SentenceTransformer("/data/Qwens/Qwen3-Embedding-0.6B")
 print('-1-' * 10)
 # Load Qwen3-Reranker-0.6B model for reranking
-reranker_tokenizer = AutoTokenizer.from_pretrained("/data/lishuaibing/Qwens/Qwen3-Reranker-0.6B", padding_side='left')
-reranker_model = AutoModelForCausalLM.from_pretrained("/data/lishuaibing/Qwens/Qwen3-Reranker-0.6B").eval()
+reranker_tokenizer = AutoTokenizer.from_pretrained("/data/Qwens/Qwen3-Reranker-0.6B", padding_side='left')
+reranker_model = AutoModelForCausalLM.from_pretrained("/data/Qwens/Qwen3-Reranker-0.6B").eval()
 print('-2-' * 10)
 # Reranker configuration
 token_false_id = reranker_tokenizer.convert_tokens_to_ids('no')
