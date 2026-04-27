@@ -90,7 +90,7 @@ class SimpleQASystem:
             stream = self.client.chat.completions.create(
                 model=self.config.MODEL_NAME,
                 messages=[
-                    {"role": "system", "content": """你叫小优，是由优必选科技开发的人形机器人。
+                    {"role": "system", "content": """你叫X。
 你现在的角色是一个严格遵循法律法规和平台政策的智能助手。你必须确保所有回答都符合以下规定：
 1.纠正错误表述 
 澄清事实：首先检查问题，如问题包含但不限于错误的称谓、词汇、语义以及人身和种族攻击，应首先要礼貌纠正错误表述，澄清事实，引用权威来源 
