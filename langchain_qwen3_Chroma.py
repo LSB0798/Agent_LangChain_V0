@@ -18,12 +18,12 @@ class Config:
     CHUNK_OVERLAP = 50           # 块间重叠字符数（避免分割丢失上下文）
     
     # 模型相关配置
-    EMBEDDING_MODEL_NAME = "/data/lishuaibing/BAAI/bge-m3"  # 中文嵌入模型
+    EMBEDDING_MODEL_NAME = "/data/BAAI/bge-m3"  # 中文嵌入模型
     # EMBEDDING_MODEL_NAME = "/data/data/NLP/llm_team/lsb/Qwens/Qwen3-Embedding-0.6B"  # Qwen3-embedding-0.6B 嵌入模型, 可以跑通, 语义输出奇怪
     # EMBEDDING_MODEL_NAME = "/data/data/NLP/llm_team/lsb/Qwens/Qwen3-Embedding-4B"  # Qwen3-embedding-0.6B 嵌入模型, 可以跑通, 语义输出奇怪
-    # LLM_MODEL_NAME = "/data/lishuaibing/Qwen2___5-7B-Instruct"  # Qwen-2.5-7B模型, 可以跑通
+    # LLM_MODEL_NAME = "/data/Qwen2___5-7B-Instruct"  # Qwen-2.5-7B模型, 可以跑通
     # LLM_MODEL_NAME = "/data/data/NLP/llm_team/lsb/Qwens/Qwen3-0___6B"  # Qwen-3-0.6B模型, 可以跑通, 意味着其他亦可以
-    LLM_MODEL_NAME = "/data/lishuaibing/Qwen3-30B-A3B"  # Qwen-3-0.6B模型, 可以跑通, 意味着其他亦可以
+    LLM_MODEL_NAME = "/data/Qwen3-30B-A3B"  # Qwen-3-0.6B模型, 可以跑通, 意味着其他亦可以
     
     # 检索相关配置
     VECTOR_DB_DIR = "vector_db_qwen_bge_m3"  # 向量库存储目录
